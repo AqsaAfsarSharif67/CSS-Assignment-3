@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.slideBox {
+    width: 70px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+}
+
+.slideBox div {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+.fb {
+    background-color: blue;
+}
+
+.slideBox :nth-child(2) {
+    background-color: black;
+}
+
+.slideBox :nth-child(3) {
+    background-color: red;
+}
+
+.slideBox :nth-child(4) {
+    background-color: greenyellow;
+}
+
+.space {
+    width: 100%;
+    height: 20vh;
+}
+
+.custom3 {
+    display: flex !important;
+    width: 100%;
+    justify-content: center !important;
+}
+
+.custom3 li {
+    margin: 10px;
+    color: black !important;
+    font-size: 19px;
+}
+
+#page1 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box {
+    width: 90%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+}
+
+.page1Image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1Image img {
+    width: 100%;
+
+}
+
+.page1RightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page1RightContent h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: black;
+}
+
+.page1RightContent h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: orangered;
+}
+
+.page1RightContent p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.page1InnerDiv {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: start;
+}
+
+.text-div {
+    display: flex;
+}
+
+@media (max-width:970px) {
+    .box {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        width: 100%;
+    }
+
+    .page1Image img {
+        width: 70%;
+    }
+
+    .page1InnerDiv {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-div {
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .text-div p {
+        text-align: center;
+        word-wrap: break-word;
+        font-size: 3vw;
+    }
+}
+
+
+
+#page2 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2Box {
+    min-width: 80%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    gap: 35px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.page2Box p {
+    font-size: 19px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.page2Box :nth-child(3) {
+    width: 100%;
+}
+
+
+.page2Box h1 {
+    font-size: 42px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+.page2Box button {
+    width: 150px;
+    height: 45px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+#page3 {
+    width: 100%;
+    min-height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#page3 h1 {
+    font-size: 42px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+#page4 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.page4Box {
+    width: 90%;
+    min-height: 90vh;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.itemBox {
+    width: 19% !important;
+    min-height: 340px;
+    border: 1px dashed black;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    padding: 10px 0;
+    word-break: normal;
+}
+
+.itemBox span {
+    color: rgb(222, 160, 15);
+}
+
+.itemBox button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.btn-div button {
+    width: 150px !important;
+    height: 45px !important;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+#page6 {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.upperDiv {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.upperDiv h1 {
+    font-size: 42px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+.downDiv {
+    width: 100%;
+    background-color: bluevolet;
+    height: 80vh;
+
+}
+
+.downDivBox {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page6Box {
+    width: 80%;
+    min-height: 50vh;
+}
+
+.cardCustom {
+    width: 50%;
+    height: 70% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardUpper {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.cardDown {
+    width: 100%;
+    height: 50%;
+}
+
+.cardDown p {
+    font-size: 19px;
+    color: black;
+}
+
+.cardCustom button {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 136, 0);
+    color: black;
+    font-size: 19px;
+    border: none;
+}
+
+.left {
+    position: absolute;
+    left: 200px;
+}
+
+.right {
+    position: absolute;
+    right: 200px;
+
+}
+
+#page7 {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#page8 {
+    width: 100%;
+    min-height: 70vh;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+
+#page8 input {
+    height: 50px;
+    padding: 10px;
+}
+
+#page8 input,
+textarea {
+    resize: none;
+    width: 500px;
+}
+
+#page8 button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(226, 149, 5);
+    color: black;
+}
+
+
+footer {
+    width: 100%;
+    min-height: 70vh;
+    color: white;
+    background-color: rgb(34, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBox ul {
+    list-style: none;
+}
+
+.footerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBox ul li {
+    display: flex;
+    gap: 20px;
+}
+
+
+@media (max-width:900px) {
+    .cardCustom {
+        width: 100% !important;
+        height: 70vh !important;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .cardUpper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        text-align: center;
+    }
+
+    .cardDown {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .page6Box button {
+        display: none;
+    }
+}
+
+
+@media (max-width:505px) {
+
+    #page8 input,
+    textarea {
+        width: 80%;
+    }
+
+    .page1InnerDiv h1 {
+        font-size: 3rem;
+    }
+    #page3{
+        text-align: center;
+    }
+}
+
+@media (max-width:800px) {
+    .page4Box {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .itemBox {
+        width: 70% !important;
+    }
+}
+
+@media (max-width:1000px) {
+    .custom3 {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .custom2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        height: 100vh;
+    }
+
+    .slideBox {
+        display: none;
+    }
+}
